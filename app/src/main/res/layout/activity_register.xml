@@ -1,0 +1,88 @@
+<ScrollView android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+    <LinearLayout android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/mybackground">
+        <TextView
+            android:text="REGISTRATION"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Employee Name"
+            android:textColorHint="#001FBB"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Place"
+            android:textColorHint="#001FBB"
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="Designation"
+            android:textColorHint="#001FBB"
+            android:id="@+id/desig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="Salary"
+            android:inputType="number"
+            android:textColorHint="#001FBB"
+            android:id="@+id/sal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="Employee Code"
+            android:textColorHint="#001FBB"
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="Password"
+            android:textColorHint="#001FBB"
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="Confirm Password"
+            android:textColorHint="#001FBB"
+            android:id="@+id/cpass"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="REGISTER"
+            android:textColor="#001FBB"
+            android:layout_margin="10dp"
+            android:onClick="registerclickevent"
+            android:background="@drawable/roundbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="BACK TO LOGIN"
+            android:textColor="#001FBB"
+            android:layout_margin="10dp"
+            android:onClick="loginbackclickevent"
+            android:background="@drawable/roundbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
