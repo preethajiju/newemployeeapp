@@ -1,5 +1,6 @@
 package com.example.newemployeeapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -28,7 +29,10 @@ class RegisterActivity : AppCompatActivity() {
         Toast.makeText(this,getPass.text.toString(),Toast.LENGTH_LONG).show()
         Toast.makeText(this,getCpass.text.toString(),Toast.LENGTH_LONG).show()
     }
-    fun loginbackclickevent(view: View) {
 
+
+    fun loginevent(view: View) {
+        intent= Intent(this,MainActivity::class.java)
+        startActivity(intent)
     }
 }

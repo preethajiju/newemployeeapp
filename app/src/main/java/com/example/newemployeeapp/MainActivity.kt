@@ -1,5 +1,6 @@
 package com.example.newemployeeapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,5 +20,8 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this,getPass.text.toString(),Toast.LENGTH_LONG).show()
     }
 
-    fun registerevent(view: View) {}
+    fun registerevent(view: View) {
+        intent= Intent(this,RegisterActivity::class.java)
+        startActivity(intent)
+    }
 }
